@@ -12,17 +12,87 @@
 
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <header class="hero">
     <div class="container">
         <img  class="hero__logo" src="images/ebac_logo.svg" alt="EBAC">
         <p class="hero__text">
-            O maior evento de tecnologia começa em <br>10d 12h 20m 15s
+            O maior evento de tecnologia começa em <br><span id="contador"></span>
         </p>
+        <div class="infos-bar">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Localização</b>
+                    Allianz Parque - Barra Funda - são Paulo
+                </li>
+                <li class="infos-bar__infos__item">
+                <b>Preço</b>
+                A parti de R$ 120,00
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando</b>
+                    12/12/2024 às 19hrs
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">
+                Garanta sua vaga
+            </a>
+        </div>
     </div>
 
 </header>
+<section class="event event--frontend" >
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">front-end</h2>
+            <p class="event__details_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eligendi? Praesentium, atque! Facilis earum nobis voluptate blanditiis? Atque reprehenderit minima dolore praesentium sunt laborum harum! Quia aliquid molestiae tenetur! Qui!
+            </p>
+        </div>
+        <img class="event__image" src="./images/frontend.png" alt="Front-end">
+    </div>
+</section>
+
+<section class="event event--ui-ux event--image-left" >
+    <div class="container" data-aos="fade-left">
+        <div class="event__details">
+            <h2 class="event__details__title">UI-UX</h2>
+            <p class="event__details_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eligendi? Praesentium, atque! Facilis earum nobis voluptate blanditiis? Atque reprehenderit minima dolore praesentium sunt laborum harum! Quia aliquid molestiae tenetur! Qui!
+            </p>
+        </div>
+        <img class="event__image" src="./images/ui-ux.png" alt="Front-end" data-aos="fade-right">
+    </div>
+</section>
+
+<section class="event event--data-science">
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">DATA-SCIENCE</h2>
+            <p class="event__details_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eligendi? Praesentium, atque! Facilis earum nobis voluptate blanditiis? Atque reprehenderit minima dolore praesentium sunt laborum harum! Quia aliquid molestiae tenetur! Qui!
+            </p>
+        </div>
+        <img class="event__image" src="./images/data.png" alt="Front-end">
+    </div>
+</section>
+
+<section class="event event--backend event--image-left">
+    <div class="container"  data-aos="fade-left">
+        <div class="event__details">
+            <h2 class="event__details__title">BACK-END</h2>
+            <p class="event__details_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eligendi? Praesentium, atque! Facilis earum nobis voluptate blanditiis? Atque reprehenderit minima dolore praesentium sunt laborum harum! Quia aliquid molestiae tenetur! Qui!
+            </p>
+        </div>
+        <img class="event__image" src="./images/backend.png" alt="Front-end">
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="scripts/main.js"></script>
     
 </body>
